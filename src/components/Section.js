@@ -9,7 +9,15 @@ const Section = props => {
       id={props.id}
       className={props.className}
     >
-      {props.children}
+      <div className="container">
+        {Tag === 'section' && (
+          <div className="section-title">
+            <h2>{props.sectionTitle}</h2>
+            <div className="tagline">{props.sectionTagline}</div>
+          </div>
+        )}
+        {props.children}
+      </div>
     </Tag>
   )
 }
