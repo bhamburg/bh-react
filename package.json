@@ -35,7 +35,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0"
   },
   "homepage": "http://bhamburg.github.io/bh-react"
 }
