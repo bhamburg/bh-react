@@ -1,0 +1,123 @@
+// Modules and Variables
+@import "partials/base";
+
+// Partials
+@import "partials/reset";
+@import "partials/typography";
+
+body {
+  background-color: $black;
+  color: $white;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  clear: both;
+  padding: 0 20px;
+}
+a {
+  color: $links;
+  &:hover {
+    color: lighten($links, 20%);
+  }
+}
+
+header, section {
+  background-color: $white;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  &.full {
+    min-height: 100vh;
+  }
+}
+header {
+  a, a:visited, i {
+  color: $light-gray;
+  text-decoration: none;
+  margin: 0 5px;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+    &.more {
+      font-style: italic;
+      text-align: center;
+      margin: auto;
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      width: 100px;
+      margin-left: -50px;
+      span {
+        display: block;
+      }
+    }
+  }
+  nav {
+    .container {
+      height: 36px;
+      padding: 20px 12px 0 12px;
+      border-bottom: 1px $black solid;
+    }
+    span {
+      display: none;
+    }
+  }
+}
+section {
+  padding: 100px 0;
+  color: $black;
+  background-color: $white;
+  &.dark {
+    color: $light-gray;
+    background-color: $gray;
+    a, a:visited {
+      color: lighten($links, 20%);
+      &:hover {
+        color: lighten($links, 30%);
+      }
+    }
+  }
+}
+#hero {
+  background-image: url(../assets/philly1927-dark.jpg);
+  background-position: top center;
+  .hero-text {
+    text-align: center;
+    margin-top: 30vh;
+  }
+  .tagline {
+    font-size: 30px;
+  }
+}
+#about {
+  background-image: url(../assets/office-light-blur.jpg);
+  background-position: center center;
+}
+#work {
+  background-image: url(../assets/center-city-dark.jpg);
+  background-position: center center;
+}
+#music {
+  background-image: url(../assets/banjo-nursery-light-blur.jpg);
+  background-position: center center;
+}
+#etc {
+  background-image: url(../assets/x-hadouken-dark.jpg);
+  background-position: center center;
+}
+footer {
+  height: 18px;
+  margin: 24px 0;
+  color: $gray;
+  a, a:visited {
+    color: $gray;
+  }
+}
