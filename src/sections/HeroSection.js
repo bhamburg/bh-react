@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../components/Section'
-import Nav from '../components/Nav'
+import Navigation from '../components/Navigation'
 import TypedHero from '../components/TypedHero'
 import heroBg from '../assets/philly1927-dark.jpg'
 import { Link } from 'react-scroll'
@@ -14,7 +14,7 @@ const HeroSection = props => {
       className="dark full"
       background={heroBg}
     >
-      <Nav/>
+      <Navigation />
       <div className="container animated flipInY slower delay-2s">
         <div className="hero-text">
           <h1>Brian Hamburg</h1>

@@ -9,7 +9,7 @@ const WorkSection = props => {
       background={workBg}
       sectionTitle="Work"
       sectionTagline="Handcrafted HTML, CSS, and JavaScript"
-      className="dark"
+      className="dark full"
     >
       <p>
         I’m a web developer with the <a href="https://dicegrp.org" ><abbr title="Digital Innovation and Consumer Experience">DICE</abbr> Group</a> at <a href="https://jefferson.edu">Jefferson</a>,
