@@ -25,7 +25,7 @@ class Navigation extends Component {
   }
   render() {
     return (
-      <Navbar dark expand="lg">
+      <Navbar dark expand="lg" style={{borderBottom: '1px solid black'}}>
         <NavbarBrand href="/" className="logo">bh</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
@@ -58,12 +58,6 @@ class Navigation extends Component {
               <NavLink href="https://twitter.com/burgbits">
                 <FontAwesomeIcon icon={['fab', 'twitter']}/>
                 <span>Twitter</span>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://instagram.com/burgbits">
-                <FontAwesomeIcon icon={['fab', 'instagram']}/>
-                <span>Instagram</span>
               </NavLink>
             </NavItem>
           </Nav>
