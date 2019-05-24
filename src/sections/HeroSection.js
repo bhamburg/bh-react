@@ -15,10 +15,10 @@ const HeroSection = props => {
       background={heroBg}
     >
       <Navigation />
-      <div className="container animated flipInY slower delay-2s">
+      <div className="container animated fadeIn slower delay-2s">
         <div className="hero-text">
           <h1>Brian Hamburg</h1>
-          <div className="tagline">
+          <div className="tagline animated fadeIn slower delay-5s">
             <TypedHero
               strings={[
                 'Father of Female Fraternal Twins',

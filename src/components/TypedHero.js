@@ -16,7 +16,7 @@ class TypedHero extends Component {
       backDelay: 2000,
       loop: true,
       shuffle: true,
-      startDelay: 2000,
+      startDelay: 0,
       smartBackspace: false
     };
     // this.el refers to the <span> in the render() method

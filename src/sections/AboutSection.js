@@ -11,6 +11,7 @@ const AboutSection = props => {
       sectionTitle="About"
       sectionTagline="Who is this Brian character, anyway?"
       className="full"
+      style={{backgroundPosition: 'left'}}
     >
       <p>
         I’m a web developer with the <a href="https://dicegrp.org" ><abbr title="Digital Innovation and Consumer Experience">DICE</abbr> Group</a> at <a href="https://jefferson.edu">Jefferson</a>,

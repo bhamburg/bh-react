@@ -10,10 +10,16 @@ const EtcSection = props => {
       sectionTitle="Et Cetera"
       sectionTagline="Random Acts of Nerdery"
       className="dark full"
+      style={{backgroundPosition: 'right'}}
     >
       <p>
-        I’m a web developer with the <a href="https://dicegrp.org" ><abbr title="Digital Innovation and Consumer Experience">DICE</abbr> Group</a> at <a href="https://jefferson.edu">Jefferson</a>,
-        where I get to work with a talented and diverse team of technologists, designers, researchers, and writers to improve healthcare and education experiences across the Philadelphia region and beyond.
+        When I’m not wrangling websites or strumming the old four-string, my other hobbies include reading about tech and philosophy, rooting for the Phillies and Eagles, and playing and collecting classic and modern video games on my various original consoles and custom-built gaming PC.
+      </p>
+      <p>
+        I’ve become a bit of a retro gaming connoisseur over the past few years while rebuilding my library of cartridges and enjoying them in the highest fidelity possible. My tastes gravitate towards games from and inspired by the 8- and 16-bit “golden age” of pixel art. Kids can keep their Fortnite and Overwatch. Give me the “<abbr title="Nintendo Entertainment System">NES</abbr> Hard” platformers, run-and-guns, and <abbr title="role-playing games">RPGs</abbr>. If anyone wants to chat about <abbr title="professional video monitor">PVM</abbr> <abbr title="cathode-ray tube">CRT</abbr> scan lines in 240p <abbr title="red-green-blue additive color model">RGB</abbr>, 1CHIP <abbr title="Super Nintendo Entertainment System">SNES</abbr> models, or the latest advances in <abbr title="field-programmable gate array">FPGA</abbr>-based systems with near-perfect accuracy and zero-to-low input latency, hit me up.
+      </p>
+      <p>
+        Check out what I’ve been reading and playing lately.
       </p>
     </Section>
   )
