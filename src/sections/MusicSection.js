@@ -12,7 +12,15 @@ const MusicSection = props => {
       className="full"
     >
       <div className="video-container">
-        <iframe title="Brian Plays Banjo" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLA4A315D315FAFD4F" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+        <iframe 
+          title="Brian Plays Banjo" 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/videoseries?list=PLA4A315D315FAFD4F" 
+          frameBorder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowFullScreen 
+        />
       </div>
       <p>
         It all started when my father asked me to join the newly formed Irish American String Band, to take tenor banjo lessons with him, and to participate in the Philadelphia Mummers Parade for the year 2000. More than twenty years later, the banjo has taken me places that I never thought possible.
