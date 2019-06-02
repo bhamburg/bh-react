@@ -2,7 +2,8 @@ import HeroSection from './HeroSection'
 import AboutSection from './AboutSection'
 import WorkSection from './WorkSection'
 import MusicSection from './MusicSection'
-import EtcSection from './EtcSection'
+import ReadingSection from './ReadingSection'
+import GamingSection from './GamingSection'
 import ContactSection from './ContactSection'
 import FooterSection from './FooterSection'
 
@@ -11,7 +12,8 @@ export {
   AboutSection,
   WorkSection,
   MusicSection,
-  EtcSection,
+  ReadingSection,
+  GamingSection,
   ContactSection,
   FooterSection
 }

@@ -1,15 +1,15 @@
 import React from 'react'
 import Section from '../components/Section'
-import gamingBg from '../assets/x-hadouken-dark.jpg'
+import gamingBg from '../assets/king-dice-lighter.jpg'
 
 const EtcSection = props => {
   return (
     <Section
-      id="etc"
+      id="gaming"
       background={gamingBg}
-      sectionTitle="Et Cetera"
-      sectionTagline="Random Acts of Nerdery"
-      className="dark full"
+      sectionTitle="Gaming"
+      sectionTagline="BurgBits Plays the Classics"
+      className="full"
       style={{backgroundPosition: 'right'}}
     >
       <p>

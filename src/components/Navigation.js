@@ -2,13 +2,11 @@ import React, { Component } from 'react'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink } from 'reactstrap'
+  NavItem } from 'reactstrap'
+import logo from '../assets/bb.svg'
 
 class Navigation extends Component {
   constructor(props) {
@@ -25,47 +23,50 @@ class Navigation extends Component {
   }
   render() {
     return (
-      <Navbar dark expand="lg" style={{borderBottom: '1px rgba(255, 255, 255, 0.5) solid'}}>
-        <NavbarBrand href="/" className="logo">bh</NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <div className="subrow">
-              <NavItem>
-                <Link className="nav-link" href="#about" to="about" smooth={true}>About</Link>
-              </NavItem>
-              <NavItem>
-                <Link className="nav-link"href="#work" to="work" smooth={true}>Work</Link>
-              </NavItem>
-              <NavItem>
-                <Link className="nav-link"href="#music" to="music" smooth={true}>Music</Link>
-              </NavItem>
-              <NavItem>
-                <Link className="nav-link"href="#etc" to="etc" smooth={true}>Etc.</Link>
-              </NavItem>
-            </div>
-            <div className="subrow">
+      <Navbar dark expand="lg">
+        <NavbarBrand href="/" className="logo">
+          <img src={logo} alt="burgbits logo" style={{height: 33, width: 33}} />
+        </NavbarBrand>
+        <Nav className="ml-auto" navbar>
+          <div className="subrow">
             <NavItem>
-              <a className="nav-link" href="https://www.linkedin.com/in/brianhamburg" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={['fab', 'linkedin']} />
-                <span>Email</span>
-              </a>
+              <Link className="nav-link" href="#about" to="about" title="about Brian" smooth={true}>
+                <FontAwesomeIcon icon={'user'} />
+                <span>About</span>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/bhamburg" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={['fab', 'github']} />
-                <span>Github</span>
-              </NavLink>
+              <Link className="nav-link" href="#work" to="work" title="work" smooth={true}>
+                <FontAwesomeIcon icon={'briefcase'} />
+                <span>Work</span>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://twitter.com/burgbits" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={['fab', 'twitter']} />
-                <span>Twitter</span>
-              </NavLink>
+              <Link className="nav-link" href="#music" to="music" title="music" smooth={true}>
+              <FontAwesomeIcon icon={'music'} />
+                <span>Music</span>
+              </Link>
             </NavItem>
-            </div>
-          </Nav>
-        </Collapse>
+            <NavItem>
+              <Link className="nav-link" href="#reading" to="reading" title="reading list" smooth={true}>
+                <span>Reading</span>
+                <FontAwesomeIcon icon={'book-open'} />
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="nav-link" href="#gaming" to="gaming" title="gaming" smooth={true}>
+                <span>Gaming</span>
+                <FontAwesomeIcon icon={'gamepad'} />
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="nav-link" href="#contact" to="contact" smooth={true}>
+                <span>Contact</span>
+                <FontAwesomeIcon icon={'envelope'} />
+              </Link>
+            </NavItem>
+          </div>
+        </Nav>
       </Navbar>
     )
   }

@@ -4,19 +4,36 @@ import {
     AboutSection,
     WorkSection,
     MusicSection,
-    EtcSection,
+    ReadingSection,
+    GamingSection,
     ContactSection,
     FooterSection
   } from './sections'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { 
+  faEnvelope, 
+  faChevronDown, 
+  faUser, 
+  faBriefcase,
+  faMusic,
+  faBookOpen,
+  faGamepad } from '@fortawesome/free-solid-svg-icons'
 import xml2js from 'xml2js'
 
-const GOODREADS_API = "https://www.goodreads.com/review/list/4284038.xml?key=WtRxj0qGSLZH6RXaR3BRg&v=2"
+const GOODREADS_API = "https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/4284038.xml?key=WtRxj0qGSLZH6RXaR3BRg&v=2"
 let parser = new xml2js.Parser()
  
-library.add(fab, faEnvelope, faChevronDown)
+library.add(
+  fab, 
+  faEnvelope, 
+  faChevronDown, 
+  faUser, 
+  faBriefcase,
+  faMusic,
+  faBookOpen,
+  faGamepad
+)
 
 class App extends Component {
 
@@ -45,7 +62,8 @@ class App extends Component {
         <AboutSection/>
         <WorkSection/>
         <MusicSection/>
-        <EtcSection/>
+        <ReadingSection/>
+        <GamingSection/>
         <ContactSection/>
         <FooterSection/>
       </div>
